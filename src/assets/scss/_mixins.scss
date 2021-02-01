@@ -1,0 +1,9 @@
+@mixin dimensions($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin social-link-bg($width, $height, $name) {
+  @include dimensions($width, $height);
+  background: url('../img/icons/' + $name + '.svg') center / $width $height no-repeat;
+}

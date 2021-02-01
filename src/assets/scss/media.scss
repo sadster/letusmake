@@ -1,0 +1,145 @@
+@media (max-width: 900px) {
+  .header {
+    padding: 0 10px;
+  }
+
+  .banner {
+    padding: 0 10px;
+  }
+
+  .main {
+    .wrapper {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    &-featured {
+      &-gallery {
+        justify-content: space-around;
+      }
+    }
+
+    &-team {
+      padding-bottom: 29px;
+
+      &-list {
+        justify-content: center;
+
+        &-item {
+          margin: 0 20px 20px 0;
+        }
+      }
+    }
+
+    &-contact {
+      &-container {
+        align-items: center;
+        flex-direction: column;
+
+        .section__text {
+          text-align: center;
+        }
+      }
+
+      &-location {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .footer {
+    &-list {
+      align-items: center;
+      flex-direction: column;
+
+      &__item {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .section {
+    &-featured {
+      &-gallery {
+        flex-direction: column;
+        align-items: center;
+
+        &-thumb {
+          &:nth-child(2n) {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 548px) {
+  .section {
+    &-featured {
+      &-gallery {
+        &-thumb {
+          &:nth-child(2n) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+    &-nav {
+      display: none;
+
+      &__btn {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: transparent url('../img/icons/menu.svg') center / 100% no-repeat;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .section {
+    &-contact {
+      &-form {
+        width: 100%;
+
+        textarea {
+          margin-bottom: 5px;
+        }
+
+        input[type="email"] {
+          width: 100%;
+          margin-bottom: 5px;
+        }
+
+        input[type="submit"] {
+          width: 100%;
+          background-position: calc(50% - 30px) 20px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 36px 10px;
+    text-align: center;
+  }
+}
